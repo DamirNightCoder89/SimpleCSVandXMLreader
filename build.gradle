@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+run {
+    standardInput = System.in
+}
+
+application {
+    mainClass = 'org.example.sample.Parser'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation(platform('org.junit:junit-bom:5.8.2'))
+    testImplementation('org.junit.jupiter:junit-jupiter')
+    testRuntimeOnly('org.junit.jupiter:junit-jupiter')
+}
+
+test {
+    useJUnitPlatform()
+}

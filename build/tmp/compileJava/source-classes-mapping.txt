@@ -1,0 +1,4 @@
+org/example/sample/entity/Building.java
+ org.example.sample.entity.Building
+org/example/sample/Parser.java
+ org.example.sample.Parser

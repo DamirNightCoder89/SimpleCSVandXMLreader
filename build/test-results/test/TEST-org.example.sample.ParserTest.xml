@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.example.sample.ParserTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-12-14T07:43:13" hostname="DESKTOP-QTUO0U7" time="0.085">
+  <properties/>
+  <testcase name="parseXMLAssertions(Path)" classname="org.example.sample.ParserTest" time="0.077"/>
+  <testcase name="parseCSVAssertions(Path)" classname="org.example.sample.ParserTest" time="0.007"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
