@@ -2,7 +2,6 @@ package org.example.sample;
 
 import org.example.sample.entity.Building;
 
-import javax.xml.bind.JAXBException;
 import javax.xml.namespace.QName;
 import javax.xml.stream.XMLEventReader;
 import javax.xml.stream.XMLInputFactory;
@@ -21,7 +20,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class Parser {
-    public static void main(String[] args) throws JAXBException {
+    public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);
 
@@ -93,12 +92,12 @@ public class Parser {
 
                         Attribute houseAttr = startElement.getAttributeByName(new QName("house"));
                         if (houseAttr != null){
-                            building.setHouse(Integer.valueOf(houseAttr.getValue()));
+                            building.setHouse(Integer.parseInt(houseAttr.getValue()));
                         }
 
                         Attribute floorAttr = startElement.getAttributeByName(new QName("floor"));
                         if (floorAttr != null){
-                            building.setFloor(Integer.valueOf(floorAttr.getValue()));
+                            building.setFloor(Integer.parseInt(floorAttr.getValue()));
                         }
                     }
                 }
